@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'counter',
+  selector: 'app-counter',
   template: `
     <button (click)="decrement()">-</button>
     <span data-testid="count">Current Count: {{ counter }}</span>
