@@ -2,8 +2,9 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/spec",
-    "module": "CommonJs",
-    "types": ["jest"]
+    "module": "commonjs",
+    "types": ["jest", "@testing-library/jest-dom"]
   },
-  "include": ["src/**/*.spec.ts", "src/**/*.d.ts"]
+  "files": ["setup-jest.ts"],
+  "include": ["**/*.spec.ts", "**/*.test.ts", "**/*.d.ts", "jest.config.ts"]
 }
